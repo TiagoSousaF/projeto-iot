@@ -1,26 +1,21 @@
-
-</body>
-
-</html>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Led Liga/Desliga</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <title>LED Web</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <main>
-        <div class="espaço">
-            <input type="checkbox" id="controle">
-            <label for="controle">
-                <div class="sol"></div>
-            </label>
-        </div>
-    </main>
-</body>
+  <div id="amarelo" class="led" aria-label="LED amarelo" role="img"></div>
 
+  <div class="actions">
+    <button id="btnLigar" type="button" onclick="ligarAmarelo()">Ligar</button>
+    <button id="btnDesligar" type="button" onclick="desligar()">Desligar</button>
+  </div>
+  
+</body>
+<!-- Paho MQTT (WebSockets) link da web-->
+<!-- <script src="https://unpkg.com/paho-mqtt/mqttws31.min.js"></script>-->
+  <script src="mqtt.js"></script>  
+  <script src="script.js"></script>
 </html>
